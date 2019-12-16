@@ -1,0 +1,28 @@
+svc_fetchers_titter_video:
+  app_name: fetchers
+  env: prod
+  log_group: svc_fetchers
+  image:
+    repository: registry.tubularlabs.net/service/tubular-fetchers
+    tag: 2.43.1
+  tasks:
+    - name: video
+      group: titter
+      minReplicaCount: 1
+      resources:
+        requests:
+          cpu: 50m
+          memory: 192Mi
+        limits:
+          cpu: 500m
+          memory: 512Mi
+      command: /opt/tubular/fetchers/tpython
+      args:
+        - /opt/tubular/fetchers/manage.py
+        - flow
+        - base_http
+        - --fetcher=titter.video.TwitchVideoFetch
+        - --concurrency=10
+      environment:
+        - name: PYTHONOPTIMIZE
+          value: "1"
