@@ -7,8 +7,5 @@ svc_fetchers_tools_refresh_pos_comments_guest_tokens:
   tasks:
     - name: refresh_pos_comments_guest_tokens
       group: twitter
-      schedule: '*/10 * * * *'
-      command: /bin/sh
-      args:
-        - -c
-        - 'for i in $(seq 1 5); do echo $i; echo "refresh_pos_comments_guest_tokens"; sleep 60; done'
+      schedule: "*/10 * * * *"
+      command: /bin/sh -c for i in $(seq 1 5); do echo $i; echo "refresh_pos_comments_guest_tokens"; sleep 60; done

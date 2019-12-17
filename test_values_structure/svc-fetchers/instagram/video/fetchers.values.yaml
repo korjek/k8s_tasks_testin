@@ -20,4 +20,3 @@ svc_fetchers_instagram_video:
       args:
         - -c
         - 'while True; do date; echo "svc_fetchers_instagram_video"; sleep 60; done'
-          value: "1"
