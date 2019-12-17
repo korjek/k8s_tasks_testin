@@ -5,10 +5,10 @@ svc_fetchers_tools_fb_graph_quota_account:
     repository: busybox
     tag: 1.31.0
   tasks:
-    - name: graphQuotaAccount
+    - name: graphquotaaccount
       group: facebook
-      schedule: '*/10 * * * *'
+      schedule: '*/7 * * * *'
       command: /bin/sh
       args:
         - -c
-        - '''for i in $(seq 1 5); do echo $i; echo "graph_quota_account"; sleep 60; done'''
+        - for i in $(seq 1 4); do echo $i; sleep 60; done
