@@ -19,4 +19,4 @@ svc_fetchers_facebook_video:
       command: /bin/sh
       args:
         - -c
-        - 'while True; do date; echo "svc_fetchers_facebook_video"; sleep 60; done'
+        - '''while True; do date; echo "svc_fetchers_facebook_video"; sleep 60; done'''
