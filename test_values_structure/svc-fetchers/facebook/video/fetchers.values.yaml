@@ -1,4 +1,4 @@
-svc_fetchers_twitch_video:
+svc_fetchers_facebook_video:
   app_name: fetchers
   env: dev
   log_group: svc_fetchers
@@ -7,7 +7,7 @@ svc_fetchers_twitch_video:
     tag: 1.30.0
   tasks:
     - name: video
-      group: twitch
+      group: facebook
       minReplicaCount: 1
       resources:
         requests:
@@ -19,5 +19,5 @@ svc_fetchers_twitch_video:
       command: /bin/sh
       args:
         - -c
-        - 'while True; do date; echo "svc_fetchers_twitch_video"; sleep 60; done'
+        - 'while True; do date; echo "svc_fetchers_facebook_video"; sleep 60; done'
           value: "1"

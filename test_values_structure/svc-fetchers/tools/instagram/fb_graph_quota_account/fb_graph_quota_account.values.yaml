@@ -1,0 +1,14 @@
+svc_fetchers_tools_fb_graph_quota_account:
+  app_name: svc_fecthers
+  env: dev
+  image:
+    repository: busybox
+    tag: 1.31.0
+  tasks:
+    - name: graph_quota_account
+      group: facebook
+      schedule: '*/10 * * * *'
+      command: /bin/sh
+      args:
+        - -c
+        - 'for i in $(seq 1 5); do echo $i; echo "graph_quota_account"; sleep 60; done'

@@ -1,10 +1,10 @@
 svc_fetchers_instagram_video:
   app_name: fetchers
-  env: prod
+  env: dev
   log_group: svc_fetchers
   image:
-    repository: registry.tubularlabs.net/service/tubular-fetchers
-    tag: 2.43.1
+    repository: busybox
+    tag: 1.30.0
   tasks:
     - name: video
       group: instagram
@@ -16,13 +16,8 @@ svc_fetchers_instagram_video:
         limits:
           cpu: 500m
           memory: 512Mi
-      command: /opt/tubular/fetchers/tpython
+      command: /bin/sh
       args:
-        - /opt/tubular/fetchers/manage.py
-        - flow
-        - base_http
-        - --fetcher=instagram.video.TwitchVideoFetch
-        - --concurrency=10
-      environment:
-        - name: PYTHONOPTIMIZE
+        - -c
+        - 'while True; do date; echo "svc_fetchers_instagram_video"; sleep 60; done'
           value: "1"

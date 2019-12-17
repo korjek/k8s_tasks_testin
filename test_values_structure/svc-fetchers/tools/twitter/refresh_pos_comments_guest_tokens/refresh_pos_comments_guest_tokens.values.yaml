@@ -1,0 +1,14 @@
+svc_fetchers_tools_refresh_pos_comments_guest_tokens:
+  app_name: svc_fecthers
+  env: dev
+  image:
+    repository: busybox
+    tag: 1.31.0
+  tasks:
+    - name: refresh_pos_comments_guest_tokens
+      group: twitter
+      schedule: '*/10 * * * *'
+      command: /bin/sh
+      args:
+        - -c
+        - 'for i in $(seq 1 5); do echo $i; echo "refresh_pos_comments_guest_tokens"; sleep 60; done'
