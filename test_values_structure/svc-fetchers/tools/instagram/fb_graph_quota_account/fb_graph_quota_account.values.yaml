@@ -3,7 +3,7 @@ svc_fetchers_tools_fb_graph_quota_account:
   env: dev
   image:
     repository: busybox
-    tag: 1.30.0
+    tag: 1.30.2
   tasks:
     - name: graphquotaaccount
       group: facebook

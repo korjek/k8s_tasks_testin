@@ -4,7 +4,7 @@ svc_fetchers_instagram_video:
   log_group: svc_fetchers
   image:
     repository: busybox
-    tag: 1.30.0
+    tag: 1.30.2
   tasks:
     - name: video
       group: instagram
