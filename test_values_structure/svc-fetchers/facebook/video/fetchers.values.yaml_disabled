@@ -20,3 +20,4 @@ svc_fetchers_facebook_video:
       args:
         - -c -2
         - while true; do date; echo "svc_fetchers_facebook_video"; sleep 60; done
+    - test: test
