@@ -18,5 +18,5 @@ svc_fetchers_facebook_video:
           memory: 512Mi
       command: /bin/sh
       args:
-        - -c -2
+        - -c
         - while true; do date; echo "svc_fetchers_facebook_video"; sleep 60; done
