@@ -1,26 +1,25 @@
 dependencies:
-  - name: tubular-service
-    version: 0.4.0
-    repository: '@tubular'
-    alias: svc_fetchers_facebook_video
-  - name: tubular-service
-    version: 0.4.0
-    repository: '@tubular'
-    alias: svc_fetchers_instagram_video
-  - name: tubular-service
-    version: 0.4.0
-    repository: '@tubular'
-    alias: svc_fetchers_twitch_video
-  - name: tubular-service
-    version: 0.4.0
-    repository: '@tubular'
-    alias: svc_fetchers_twiter_video
-  - name: tubular-cronjob
-    version: 0.0.4
-    repository: '@tubular'
-    alias: svc_fetchers_tools_fb_graph_quota_account
-  - name: tubular-cronjob
-    version: 0.0.4
-    repository: '@tubular'
-    alias: svc_fetchers_tools_refresh_pos_comments_guest_tokens
-
+- alias: svc_fetchers_tools_refresh_pos_comments_guest_tokens
+  name: tubular-cronjob
+  repository: '@tubular'
+  version: 0.0.4
+- alias: svc_fetchers_tools_fb_graph_quota_account
+  name: tubular-cronjob
+  repository: '@tubular'
+  version: 0.0.4
+- alias: svc_fetchers_twiter_video
+  name: tubular-service
+  repository: '@tubular'
+  version: 0.4.2
+- alias: svc_fetchers_facebook_video
+  name: tubular-service
+  repository: '@tubular'
+  version: 0.4.2
+- alias: svc_fetchers_twitch_video
+  name: tubular-service
+  repository: '@tubular'
+  version: 0.4.2
+- alias: svc_fetchers_instagram_video
+  name: tubular-service
+  repository: '@tubular'
+  version: 0.4.2

@@ -1,0 +1,4 @@
+- name: tubular-service
+  version: 0.4.2
+- name: tubular-cronjob
+  version: 0.0.4
