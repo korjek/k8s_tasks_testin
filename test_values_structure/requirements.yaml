@@ -7,6 +7,14 @@ dependencies:
   name: tubular-cronjob
   repository: '@tubular'
   version: 0.0.4
+- alias: yujin_svc_fetchers_facebook_video
+  name: tubular-service
+  repository: '@tubular'
+  version: 0.4.2
+- alias: yujin_svc_fetchers_facebook_video
+  name: tubular-service
+  repository: '@tubular'
+  version: 0.4.2
 - alias: svc_fetchers_twiter_video
   name: tubular-service
   repository: '@tubular'
@@ -16,10 +24,6 @@ dependencies:
   repository: '@tubular'
   version: 0.4.2
 - alias: svc_fetchers_twitch_video
-  name: tubular-service
-  repository: '@tubular'
-  version: 0.4.2
-- alias: svc_fetchers_instagram_video
   name: tubular-service
   repository: '@tubular'
   version: 0.4.2

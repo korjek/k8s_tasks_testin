@@ -1,0 +1,21 @@
+dependencies:
+- name: tubular-service
+  repository: s3://helm.tubularlabs.net/charts/
+  version: 0.4.0
+- name: tubular-service
+  repository: s3://helm.tubularlabs.net/charts/
+  version: 0.4.0
+- name: tubular-service
+  repository: s3://helm.tubularlabs.net/charts/
+  version: 0.4.0
+- name: tubular-service
+  repository: s3://helm.tubularlabs.net/charts/
+  version: 0.4.0
+- name: tubular-cronjob
+  repository: s3://helm.tubularlabs.net/charts/
+  version: 0.0.4
+- name: tubular-cronjob
+  repository: s3://helm.tubularlabs.net/charts/
+  version: 0.0.4
+digest: sha256:863d56030143e950b8fbd66b78d303beb31dcecc3c2b99ae254c99bf70b3f1b3
+generated: "2020-03-13T10:59:12.196092+02:00"
