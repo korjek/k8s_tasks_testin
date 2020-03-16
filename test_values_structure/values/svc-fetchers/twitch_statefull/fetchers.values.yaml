@@ -1,4 +1,4 @@
-svc_fetchers_facebook_video:
+svc_fetchers_twitch_statefull:
   app_name: fetchers
   env: dev
   log_group: svc_fetchers
@@ -6,9 +6,10 @@ svc_fetchers_facebook_video:
     repository: busybox
     tag: 1.30.1
   tasks:
-    - name: video
-      group: facebook
-      minReplicaCount: 1
+    - name: statefull
+      group: twitch
+      stateful: true
+      minReplicaCount: 2
       resources:
         requests:
           cpu: 50m
@@ -19,4 +20,4 @@ svc_fetchers_facebook_video:
       command: /bin/sh
       args:
         - -c
-        - while true; do date; echo "svc_fetchers_facebook_video"; sleep 60; done
+        - while true; do date; echo "svc_fetchers_twitch_video"; sleep 60; done

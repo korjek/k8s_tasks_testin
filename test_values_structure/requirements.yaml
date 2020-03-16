@@ -23,3 +23,7 @@ dependencies:
   name: tubular-service
   repository: '@tubular'
   version: 0.4.2
+- alias: svc_fetchers_twitch_statefull
+  name: tubular-service
+  repository: '@tubular'
+  version: 0.4.2

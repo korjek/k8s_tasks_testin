@@ -12,7 +12,7 @@ svc_fetchers_instagram_video:
       resources:
         requests:
           cpu: 50m
-          memory: 192Mi
+          memory: 8Mi
         limits:
           cpu: 500m
           memory: 512Mi
