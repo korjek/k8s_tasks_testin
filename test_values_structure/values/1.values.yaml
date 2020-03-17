@@ -1,0 +1,23 @@
+svc_fetchers_twitch_statefull:
+  app_name: fetchers
+  env: dev
+  log_group: svc_fetchers
+  image:
+    repository: busybox
+    tag: 1.30.1
+  tasks:
+    - name: statefull
+      group: twitch
+      stateful: true
+      minReplicaCount: 1
+      resources:
+        requests:
+          cpu: 50m
+          memory: 8Mi
+        limits:
+          cpu: 500m
+          memory: 512Mi
+      command: /bin/sh
+      args:
+        - -c
+        - while true; do date; echo "svc_fetchers_twitch_video"; sleep 60; done
