@@ -10,20 +10,20 @@ dependencies:
 - alias: svc_fetchers_twiter_video
   name: tubular-service
   repository: '@tubular'
-  version: 0.4.2
+  version: 0.4.3
 - alias: svc_fetchers_facebook_video
   name: tubular-service
   repository: '@tubular'
-  version: 0.4.2
+  version: 0.4.3
 - alias: svc_fetchers_twitch_video
   name: tubular-service
   repository: '@tubular'
-  version: 0.4.2
+  version: 0.4.3
 - alias: svc_fetchers_instagram_video
   name: tubular-service
   repository: '@tubular'
-  version: 0.4.2
+  version: 0.4.3
 - alias: svc_fetchers_twitch_statefull
   name: tubular-service
   repository: '@tubular'
-  version: 0.4.2
+  version: 0.4.3
